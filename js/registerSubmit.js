@@ -12,7 +12,6 @@ if(localStorage.getItem("Event")){
             let email = document.getElementById("email").value
             let phone = document.getElementById("phone").value
             let college = document.getElementById("college").value
-            let event = localStorage.getItem("Event")
             let fields = document.querySelectorAll(".extra")	
             for(let i=0;i<fields.length/2;i++){	
                 members.push({	
@@ -22,6 +21,7 @@ if(localStorage.getItem("Event")){
             }
             document.querySelector(".loader-1").style.display="block"
             let date = new Date()
+            console.log(teamname,name,college,dept,email,phone,members)
             database.ref(`${event}/${phone}`).set({
                 a_teamName: teamname,
                 b_leaderName: name, 
@@ -38,7 +38,7 @@ if(localStorage.getItem("Event")){
                     document.getElementById("snackbar").innerHTML="Some error occurred"
                     myFunction()
                 }else{
-                    document.getElementById("snackbar").innerHTML="You are registered for "+event
+                    document.getElementById("snackbar").innerHTML="You are registered for "+localStorage.getItem("name")
                     myFunction()
                     qrcode = new QRCode(document.querySelector(".qr"), {
                         text: event+" "+phone,
@@ -87,7 +87,7 @@ function validateTeamName(){
     }
     else{
         if (name.value!==""){
-            teamname = document.getElementById("teamname");
+            teamname = document.getElementById("teamName").value;
             return true;
         }
         else{
@@ -157,7 +157,7 @@ function checkFields(){
 
 function openModal(){
     let Event = localStorage.getItem("Event")
-    document.querySelector(".modal_name h2").innerHTML = "You have registered for "+Event
+    document.querySelector(".modal_name h2").innerHTML = "You have registered for "+localStorage.getItem("name")
     if(modal.classList[1] === "out"){
         modal.classList.remove("out")
     }

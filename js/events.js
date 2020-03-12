@@ -183,6 +183,7 @@ data = [
 
 function register(name){
         localStorage.setItem("Event", name)
+        localStorage.setItem("name", data[0][localStorage.getItem("Event")].name)
         openModal()
 }
 modal = document.getElementById("modal1")
