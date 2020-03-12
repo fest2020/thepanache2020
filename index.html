@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Panache 2020</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js%22%3E"></script>
+
+  <!-- w3school -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/icofont/icofont.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/aos/aos.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+    <!--==========================
+    modal
+  ============================-->
+  <div id="modal1" class="modal1">
+    <div class="modal1-content">
+      <div class="modal1-header">
+        <div class="modal1_name">
+          <h2 style="float: left;"></h2>
+        </div>
+        <div class="close_btn">
+          <span class="close-button" style="float: right; font-size: 30px;">&times;</span>
+        </div>
+        <div class="w3-bar">
+          <button class="w3-bar-item w3-button w3-red tablink" onclick="openLink(event, 'Zoom1')">Description</button>
+          <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Zoom2')">Rules</button>
+          <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Zoom3')">Result</button>
+          <button class="w3-bar-item w3-button register tablink" onclick="window.open('register.html','_blank')">Register!</button>
+
+        </div>
+        <script>
+          function openLink(evt, animName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("des");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";    
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(animName).style.display = "block";
+            evt.currentTarget.className += " w3-red";
+          }
+          </script>
+      </div>
+      <div class="modal1-body">
+        <div id="Zoom1" class="w3-container des w3-animate-zoom description" style="display:block">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aspernatur cum sequi dolores illum sint corporis praesentium unde quas cumque enim itaque, excepturi optio esse possimus eius, ullam maiores a. Maiores at id natus ad numquam minima nihil, corrupti similique nemo quidem. Odit reiciendis fuga neque accusamus adipisci quia deserunt sapiente impedit, sit corporis suscipit, autem molestias ab doloremque explicabo dicta quae. Earum ipsam consequuntur officia blanditiis perferendis commodi quasi rem maiores sunt nemo harum praesentium eum, adipisci architecto, officiis ut, facilis iusto illum neque repudiandae itaque veritatis animi est totam! Est sed quibusdam totam repudiandae facilis velit perspiciatis unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ratione, unde dolor magni eum aperiam commodi mollitia quaerat quisquam labore molestiae laudantium cumque, cupiditate, vitae delectus. Ex, rerum ipsa eius accusamus quibusdam blanditiis error aperiam saepe beatae dolor vel optio, iste, eligendi voluptatum explicabo porro soluta odit. Recusandae tempora, saepe repellendus ullam modi numquam at velit. Officia, laboriosam odio et eum voluptates blanditiis praesentium quaerat quidem, itaque suscipit cupiditate dolorum dolores quo quos facilis, exercitationem nemo cum obcaecati alias. Ut, amet velit quis, officiis fugiat impedit voluptatum laudantium iste quas ea dolorem? Recusandae tenetur corrupti quisquam odit inventore adipisci voluptate!</p>
+        </div>
+        <div id="Zoom2" class="w3-container des w3-animate-zoom rules" style="display:none">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aspernatur cum sequi dolores illum sint corporis praesentium unde quas cumque enim itaque, excepturi optio esse possimus eius, ullam maiores a. Maiores at id natus ad numquam minima nihil, corrupti similique nemo quidem. Odit reiciendis fuga neque accusamus adipisci quia deserunt sapiente impedit, sit corporis suscipit, autem molestias ab doloremque explicabo dicta quae. Earum ipsam consequuntur officia blanditiis perferendis commodi quasi rem maiores sunt nemo harum praesentium eum, adipisci architecto, officiis ut, facilis iusto illum neque repudiandae itaque veritatis animi est totam! Est sed quibusdam totam repudiandae facilis velit perspiciatis unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ratione, unde dolor magni eum aperiam commodi mollitia quaerat quisquam labore molestiae laudantium cumque, cupiditate, vitae delectus. Ex, rerum ipsa eius accusamus quibusdam blanditiis error aperiam saepe beatae dolor vel optio, iste, eligendi voluptatum explicabo porro soluta odit. Recusandae tempora, saepe repellendus ullam modi numquam at velit. Officia, laboriosam odio et eum voluptates blanditiis praesentium quaerat quidem, itaque suscipit cupiditate dolorum dolores quo quos facilis, exercitationem nemo cum obcaecati alias. Ut, amet velit quis, officiis fugiat impedit voluptatum laudantium iste quas ea dolorem? Recusandae tenetur corrupti quisquam odit inventore adipisci voluptate!</p>
+        </div>
+        <div id="Zoom3" class="w3-container des w3-animate-zoom result" style="display:none">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aspernatur cum sequi dolores illum sint corporis praesentium unde quas cumque enim itaque, excepturi optio esse possimus eius, ullam maiores a. Maiores at id natus ad numquam minima nihil, corrupti similique nemo quidem. Odit reiciendis fuga neque accusamus adipisci quia deserunt sapiente impedit, sit corporis suscipit, autem molestias ab doloremque explicabo dicta quae. Earum ipsam consequuntur officia blanditiis perferendis commodi quasi rem maiores sunt nemo harum praesentium eum, adipisci architecto, officiis ut, facilis iusto illum neque repudiandae itaque veritatis animi est totam! Est sed quibusdam totam repudiandae facilis velit perspiciatis unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ratione, unde dolor magni eum aperiam commodi mollitia quaerat quisquam labore molestiae laudantium cumque, cupiditate, vitae delectus. Ex, rerum ipsa eius accusamus quibusdam blanditiis error aperiam saepe beatae dolor vel optio, iste, eligendi voluptatum explicabo porro soluta odit. Recusandae tempora, saepe repellendus ullam modi numquam at velit. Officia, laboriosam odio et eum voluptates blanditiis praesentium quaerat quidem, itaque suscipit cupiditate dolorum dolores quo quos facilis, exercitationem nemo cum obcaecati alias. Ut, amet velit quis, officiis fugiat impedit voluptatum laudantium iste quas ea dolorem? Recusandae tenetur corrupti quisquam odit inventore adipisci voluptate!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title="" onclick="window.open('https:\/\/bppimt.ac.in')" style="cursor: pointer;"></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#portfolio">Events</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#venue">Arcade</a></li>
+          <li><a href="#clients">Sponsors</a></li>
+          <li><a href="#screenshots">Team</a></li>
+          <li><a href="#testimonials">Blogs</a></li>
+          <!--<li><a href="#contact">Contact</a></li>-->
+          <!-- <li class="buy-tickets"><a href="#">Download App</a></li> -->
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0">The<br>Panache<br><span> 2020 </span></h1>
+      <!-- <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p> -->
+      <a href="https://youtu.be/H_1FKlvNH6Y" class="venobox play-btn mb-4" data-vbtype="video"
+        data-autoplay="false"></a>
+      <a href="#about" class="about-btn scrollto">About The Event</a>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Event</h2>
+            <p style="text-align: justify;">A connotation of flamboyant manner and reckless courage, a word derived from the helmet-plume worn by men of the Early Modern period in the battlefield, “Panache”. The Panache started five years ago, as a celebration of the spirit of one’s creativity and to induce in the students a sense of interest towards the English language but has spread its wings beyond its aspirations. In a world full of cultural and technical college fests, The Panache has managed to stand out, has maintained its rich variety across its event line-up ranging from Graffiti, Oratory Events, Creative Writing, and even Scavenger Hunts! We, from the B.P. Poddar Institute of Management and Technology, Kolkata, bring to you the 5th edition of this extravaganza on the 7th & 8th of April, 2020.</p>
+          </div>
+          <div class="col-lg-3">
+            <h2>Where</h2>
+            <p><strong>B.P. Poddar Institute Of Management and Technology</strong>,<br/>Main Campus,<br/>Poddar Vihar,137 VIP Road<br/>
+              Kolkata- 700052</p>
+          </div>
+          <div class="col-lg-3">
+            <h2>When</h2>
+            <p>Tuesday and Wednesday<br>7th and 8th April 2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================
+      Gallery Section
+    ============================ -->
+    <section id="gallery" class="wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p>Down the memory lane</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel gallery-carousel">pc  <a href="img/pc/pc1.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc1.jpg" alt=""></a>
+        <a href="img/pc/pc2.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc2.jpg" alt=""></a>
+        <a href="img/pc/pc3.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc3.jpg" alt=""></a>
+        <a href="img/pc/pc4.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc4.jpg" alt=""></a>
+        <a href="img/pc/pc5.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc5.jpg" alt=""></a>
+        <a href="img/pc/pc6.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc6.jpg" alt=""></a>
+        <a href="img/pc/pc7.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc7.jpg" alt=""></a>
+        <a href="img/pc/pc8.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc8.jpg" alt=""></a>
+        <!-- <a href="img/pc/pc9.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc9.jpg" alt=""></a> -->
+        <a href="img/pc/pc10.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc10.jpg" alt=""></a>
+        <a href="img/pc/pc11.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc11.jpg" alt=""></a>
+        <a href="img/pc/pc12.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc12.jpg" alt=""></a>
+        <a href="img/pc/pc13.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc13.jpg" alt=""></a>
+        <!-- <a href="img/pc/pc14.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc14.jpg" alt=""></a> -->
+        <a href="img/pc/pc15.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc15.jpg" alt=""></a>
+        <a href="img/pc/pc16.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc16.jpg" alt=""></a>
+        <a href="img/pc/pc17.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc17.jpg" alt=""></a>
+        <a href="img/pc/pc18.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc18.jpg" alt=""></a>
+        <a href="img/pc/pc19.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc19.jpg" alt=""></a>
+        <a href="img/pc/pc20.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/pc/pc20.jpg" alt=""></a>
+      </div>
+
+    </section>
+    
+    
+
+    <!--==========================
+      Portfolio Section(Events)
+    ============================-->
+
+    <section id="portfolio" class="portfolio wow fadeInUp" style="background-color: #ffa500c2;padding-top: 3%;">
+      <div class="container">
+
+        <div class="section-header" data-aos="fade-up" style="padding-top: 3%;">
+          <h2>Events</h2>
+          <p>Events in The Panache 2020</p>
+        </div>
+
+        
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img id="creative_writing" src="img/gallery/creative_writing.jpg" class="img-fluid" alt="" height="480px">
+              <div class="portfolio-links">
+                <!-- <a href="img/gallery/pan2.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a> -->
+                <a class="creative_writing" title="More Details" onclick="register(this.classList[0])"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Creative Writing</h4>
+                <p>Ink your imagination</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/gallery/wordective.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="img/gallery/games.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a> -->
+                <a class="wordective" title="More Details" onclick="register(this.classList[0])"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Wordective</h4>
+                <p>A game of words in a world of games</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="img/gallery/graffiti.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="img/gallery/exposcience.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-plus-circle"></i></a> -->
+                <a class="graffiti" title="More Details" onclick="register(this.classList[0])"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Graffiti</h4>
+                <p>Create magic with your stroke</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="img/gallery/debate.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="img/gallery/brain_teasers.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-plus-circle"></i></a> -->
+                <a class="debate" title="More Details" onclick="register(this.classList[0])"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Debating Minds</h4>
+                <p>Don't hate it,just debate it</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="img/gallery/jam.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="img/gallery/creative.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-plus-circle"></i></a> -->
+                <a class="jam" title="More Details" onclick="register(this.classList[0])"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Just a minute</h4>
+                <p>What seems impossible in one minute becomes possible in the next !</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="img/gallery/th.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="img/gallery/exposcience.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-plus-circle"></i></a> -->
+                <a class="th" title="More Details" onclick="register(this.classList[0])"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>The Treasure Hunt</h4>
+                <p>Live to hunt.Hunt to live.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="img/gallery/skit.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="img/gallery/brain_teasers.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-plus-circle"></i></a> -->
+                <a class="skit" title="More Details" onclick="register(this.classList[0])"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Skit</h4>
+                <p>Be what you can't !</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="img/gallery/jm.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="img/gallery/creative.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-plus-circle"></i></a> -->
+                <a class="jm" title="More Details" onclick="register(this.classList[0])"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Jingle Mingle</h4>
+                <p>Where creativity meets consumerism.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--==========================
+      Schedule Section
+    ============================-->
+    <section id="schedule" class="section-with-bg">
+      <div class="container wow fadeInUp" style="padding-top: 3%;">
+        <div class="section-header">
+          <h2>Event Schedule</h2>
+          <p>Will be updated soon</p>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist" style="display: none;">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Day 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Day 2</a>
+          </li>
+        </ul>
+
+        <div class="tab-content row justify-content-center" style="display: none;">
+
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Registration</h4>
+                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Keynote <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 1 -->
+
+          <!-- Schdule Day 2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 2 -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      Venue Section(Gallery)
+    ============================-->
+    <section id="venue" class="wow fadeInUp">
+
+      <div class="container-fluid" style="padding-top: 3%;">
+
+        <div class="section-header">
+          <h2>Event Arcade</h2>
+          <!-- <p>Event venue location info and gallery</p> -->
+        </div>
+
+      </div>
+
+      <div class="container-fluid venue-gallery-container">
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/ea1.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/ea1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/ea2.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/ea2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/ea3.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/ea3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/ea4.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/ea4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/ea5.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/ea5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/ea6.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/ea6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/ea7.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/ea7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/ea8.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/ea8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  <!--==========================
+      clients Section(Sponsors)
+    ============================-->
+    <section id="clients" class="clients section-bg" style="padding-bottom: 3%;padding-top: 3%;">
+      <div class="container wow fadeInUp" style="padding-top: 3%;">
+
+        <div class="section-header" data-aos="fade-up">
+          <h2>Event Sponsors</h2>
+          <!-- <p>will be updated shortly</p> -->
+        </div>
+
+        <div class="owl-carousel clients-carousel" data-aos="fade-up" data-aos-delay="100">
+          <img src="img/sponsors/ardent.jpg" onclick="window.open('https:\/\/ardentcollaborations.com/')" alt="">
+          <img src="img/sponsors/webel.jpg" onclick="window.open('https:\/\/www.webel.in')" alt="">
+          <img src="img/sponsors/madeeasy.jpg" onclick="window.open('https:\/\/www.madeeasy.in/')" alt="">
+          <img src="img/sponsors/opjgu.jpg" onclick="window.open('https:\/\/jgu.edu.in')" alt="">
+        </div>
+
+      </div>
+    </section>
+
+    <!--==========================
+    Screenshots Section(Team)
+    ============================-->
+    <section id="screenshots" class="padd-section text-center wow fadeInUp" style="background-color: rgba(255, 165, 0, 0.76);padding-top: 3%;padding-bottom: 3%;">
+
+      <div class="container" style="padding-top: 3%;">
+        <div class="section-header text-center">
+          <h2>Our Team</h2>
+          <p class="separator">Know your committee better !</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="owl-carousel owl-theme">
+          <div class="member">
+            <img src="img/team/shreyasi.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Shreyasi Ghosh</h4>
+                <span>Creative Team Head<br/>Wordective Coordinator</span>  
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/sourav.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Sourav Mohanty</h4>
+                <span>Sponsorship and Publicity Team Head<br/>Treasure Hunt Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/saronee.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Saronee Das</h4>
+                <span>Sponsorship and Publicity Team Head<br/>Debate Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/avantika.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Avantika Mishra</h4>
+                <span>Finance Head<br/>Debate Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/ruchika.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Ruchika Saraogi</h4>
+                <span>Logistics Team Head<br/>Jingle Mingle Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/parth.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Parth Malakar</h4>
+                <span>Logistics Team Head<br/>Creative Writing Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/abhishikta.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Abhishikta Das</h4>
+                <span>JAM Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/ashimita.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Ashmita Kumari</h4>
+                <span>Wordective Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/abhishikta2.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Abhishikta Das</h4>
+                <span>JAM Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/arindam.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Arindam Dey</h4>
+                <span>Treasure Hunt Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/Adrija.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Adrija Brahmachary</h4>
+                <span>Jingle Mingle Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/rupesh.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Rupesh Pal</h4>
+                <span>Creative Writing Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/tapanjyoti.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Tapan Jyoti Majumder</h4>
+                <span>Graffiti Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/pawan.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Pawan Kumar Sufi</h4>
+                <span>Skit Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/anushka.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Anushka Sonthalia</h4>
+                <span>Skit Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/swsseta.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Sussweta Sen</h4>
+                <span>Graffiti Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div><img src="img/gallery/1.jpg" alt="img"></div>
+          <div><img src="img/gallery/1.jpg" alt="img"></div>
+          <div><img src="img/gallery/1.jpg" alt="img"></div>
+          <div><img src="img/gallery/1.jpg" alt="img"></div>
+          <div><img src="img/gallery/1.jpg" alt="img"></div>
+          <div><img src="img/gallery/1.jpg" alt="img"></div>
+          <div><img src="img/gallery/1.jpg" alt="img"></div>
+          <div><img src="img/gallery/1.jpg" alt="img"></div>
+          <div><img src="img/gallery/1.jpg" alt="img"></div> -->
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Web Developers</h2>
+          <!-- <p class="separator">Let's get innovative</p> -->
+        </div>
+      </div>
+      <div class="container">
+        <div class="owl-carousel developers owl-theme">
+          <div class="member">
+            <img src="img/team/samyadeep.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Samyadeep</br>Bhowmick</h4>
+                <span>Web Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/srinjan.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Srinjan</br>Ghosh</h4>
+                <span>Web Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/tathagata.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Tathagata</br>Jana</h4>
+                <span>Web Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/aakashdeep.jpeg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Akashdeep</br>Bhattacharya</h4>
+                <span>Web Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="img/team/aritra.jpeg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4><br/>Aritra</br>Bhattacharjee</h4>
+                <span>Web Developer</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+    <!--==========================
+      F.A.Q Section
+    ============================-->
+    <!-- <section id="faq" class="wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+              <ul id="faq-list">
+
+                <li>
+                  <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq1" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq2" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq3" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq4" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq5" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq6" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                    </p>
+                  </div>
+                </li>
+      
+              </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section> -->
+
+    <!--==========================
+      Subscribe Section
+    ============================-->
+    <!-- <section id="subscribe">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Newsletter</h2>
+          <p>Rerum numquam illum recusandae quia mollitia consequatur.</p>
+        </div>
+
+        <form method="POST" action="#">
+          <div class="form-row justify-content-center">
+            <div class="col-auto">
+              <input type="text" class="form-control" placeholder="Enter your Email">
+            </div>
+            <div class="col-auto">
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section> -->
+
+    <!--==========================
+      Buy Ticket Section
+    ============================-->
+    <!--<section id="buy-tickets" class="section-with-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Buy Tickets</h2>
+          <p>Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Standard Access</h5>
+                <h6 class="card-price text-center">$150</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Pro Access</h5>
+                <h6 class="card-price text-center">$250</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <!-- Pro Tier -->
+          <!--<div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Premium Access</h5>
+                <h6 class="card-price text-center">$350</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Workshop Access</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>After Party</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>-->
+
+      <!-- Modal Order Form -->
+      <!--<div id="buy-ticket-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Buy Tickets</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="#">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <select id="ticket-type" name="ticket-type" class="form-control" >
+                    <option value="">-- Select Your Ticket Type --</option>
+                    <option value="standard-access">Standard Access</option>
+                    <option value="pro-access">Pro Access</option>
+                    <option value="premium-access">Premium Access</option>
+                  </select>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn">Buy Now</button>
+                </div>
+              </form>
+            </div>
+          </div>-->   <!-- /.modal-content -->
+        <!--</div>-->        <!-- /.modal-dialog -->
+      <!--</div>-->          <!-- /.modal -->
+
+    <!--</section>-->
+
+    <!--==========================
+    Testimonials Section(Blogs)
+    ============================-->
+
+    <section id="testimonials" class="text-center wow fadeInUp">
+      <div class="container" style="padding-top: 3%;">
+        <div class="section-header">
+          <h2>Reminiscence</h2>
+          <!-- <p>Nihil officia ut sint molestiae tenetur.</p> -->
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-8">
+
+            <div class="testimonials-content">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner" role="listbox" style="font-size: 20px
+                ;">
+
+                  <div class="carousel-item  active">
+                    <div class="top-top">
+
+                      
+                      <p>Back in '15, as a scared teenager who just came to college, getting Panache as the first fest of college life and winning an event called 'Word Cracker' was overwhelming. Panache '17 was a huge success, organizing, participating as well as winning (yes, ECE, we need the trophy this year as well!) is probably one of the biggest chapter of my college diaries. It not only strengthened our language skills through fun & games but also strengthened the bonds we shared with seniors, juniors and batchmates. As I look today and see the tremendous effort the team is putting for this year's Panache, I know the standard is going to be way higher than what we set back in '17. Loads of love and luck!</p>
+                      <h4 style="font-size: 26px;">Medha Bhattacharya<span style="font-size: 26px;">(2019 Batch)</span></h4>
+
+                    </div>
+                  </div>
+
+                  <div class="carousel-item ">
+                    <div class="top-top">
+
+                      
+                      <p>Qualifying prelims gave a sense of confidence but what really stayed as a memory was the cheer of the audience as my viewpoint crashed down hard on the opposite team. The aura when you feel a crowd listening to your stance gave an experience rejuvenating my voice. The event not only made me feel that I too hold a ground but also gave an opportunity to make my existence be felt in the crowd of many.</p>
+                      <h4 style="font-size: 26px;">Shabina Arfa<span style="font-size: 26px;">(2020 Batch)</span></h4>
+
+                    </div>
+                  </div>
+
+                  <div class="carousel-item ">
+                    <div class="top-top">
+
+                    
+                      <p>Despite having organized several other events in my 4 years of college life, Panache will perhaps always be special. To this year's organizers, wait till the fest almost becomes your baby, till you're burnt and broken with all the work but still keep going because that's the thrill of it all! :)
+                        So yes, kids, Be something greater
+                        Go make a legacy.</p>
+                      <h4 style="font-size: 26px;">Shreya Chatterjee<span style="font-size: 26px;">(2019 Batch)</span></h4>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="btm-btm">
+
+                  <ul class="list-unstyled carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!--==========================
+      Contact Section
+    ============================-->
+   <!--  <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Nihil officia ut sint molestiae tenetur.</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>A108 Adam Street, NY 535022, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section> --><!-- #contact -->
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#about">About</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#gallery">Gallery</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#portfolio">Events</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#schedule">Schedule</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#venue">Arcade</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#clients">Sponsors</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#screenshots">Team</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#testimonials">Blogs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 col-md-6 footer-info" style="display:flex;justify-content: center;align-items: center;">
+            
+            <iframe src="https://maps.google.com/maps?q=B.P.+Poddar+Institute+of+Management+and+Technology-2&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen style="border:0;height: 400px;width: 100%;"></iframe>
+            
+          </div>
+
+          
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              137, V.I.P. ROAD, MALI BAGAN, PODDAR VIHAR, <br>
+              KOLKATA, WEST BENGAL 700052<br>
+              <strong>Phone:</strong>8017741292<br>
+              <strong>Phone:</strong>6289150418<br>
+              <strong>Email:</strong>panache2020.bppimt@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> -->
+              <a href="https://www.facebook.com/thepanache2020/" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://instagram.com/thepanache2020?igshid=1igzvih37cx4l" class="instagram"><i class="fa fa-instagram"></i></a>
+              <!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>The Panache 2020</strong>. All Rights Reserved
+      </div>
+      <div class="credits" style="display: none;">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        Created by <a href="https://bootstrapmade.com/">Uniquest Systems</a>
+      </div>
+      <div class="credits">
+        Created by <a href="#"><b>Uniquest Systems</b></a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/aos/aos.js"></script>
+  <script src="lib/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+
+<script>
+  window.addEventListener("scroll",function(){
+    // if (window.scrollY>5000) {
+    //   document.querySelector("#header.sticky").style.background="#F6F7FD"
+    // }
+    if(window.scrollY>1620){
+      let arr=document.querySelectorAll(".nav-menu li a")
+      for(i=0;i<arr.length;i++){
+        arr[i].style.color="black"
+      }
+    }
+    else if(window.scrollY<=1620){
+      let arr=document.querySelectorAll(".nav-menu li a")
+      for(i=0;i<arr.length;i++){
+        arr[i].style.color="white"
+      }
+    }
+    
+
+    is_mobile = false
+    if( $('#nav-menu-container').css('display')=='none') {
+        is_mobile = true;       
+    }
+    document.querySelector("#header.sticky")
+    let header=document.querySelector("#header")
+    console.log(is_mobile)
+    if (is_mobile===true) {
+      header.classList.toggle("sticky1",window.scrollY>1300)
+      header.classList.toggle("sticky2",window.scrollY>3329)
+      header.classList.toggle("sticky3",window.scrollY>6060)
+
+    } else {
+      header.classList.toggle("sticky1",window.scrollY>1620)
+      // header.classList.toggle("sticky1",window.scrollY>4500)
+      header.classList.toggle("sticky2",window.scrollY>3469)
+      header.classList.toggle("sticky3",window.scrollY>6060)
+    }
+
+    
+  })
+</script>
+
+</html>
