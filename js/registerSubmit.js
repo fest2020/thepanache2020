@@ -1,4 +1,5 @@
 let qrcode
+let teamname = ""
 if(localStorage.getItem("Event")){
     let database = firebase.database();
     let btn = document.getElementById("btn")
@@ -11,7 +12,6 @@ if(localStorage.getItem("Event")){
             let email = document.getElementById("email").value
             let phone = document.getElementById("phone").value
             let college = document.getElementById("college").value
-            let teamName = ""
             let event = localStorage.getItem("Event")
             let fields = document.querySelectorAll(".extra")	
             for(let i=0;i<fields.length/2;i++){	
@@ -23,7 +23,7 @@ if(localStorage.getItem("Event")){
             document.querySelector(".loader-1").style.display="block"
             let date = new Date()
             database.ref(`${event}/${phone}`).set({
-                a_teamName: teamName,
+                a_teamName: teamname,
                 b_leaderName: name, 
                 c_college: college, 
                 d_department: dept,
@@ -87,6 +87,7 @@ function validateTeamName(){
     }
     else{
         if (name.value!==""){
+            teamname = document.getElementById("teamname");
             return true;
         }
         else{
